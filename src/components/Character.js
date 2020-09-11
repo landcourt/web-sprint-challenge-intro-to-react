@@ -20,8 +20,8 @@ spin {
   background-color: white;
   
   &:hover {
-     animation-name: spin;
-     animation-duration: 10000ms; /* How long lasts 1 turn */
+     /* animation-name: spin;
+     animation-duration: 10000ms;
      animation-iteration-count: infinite;
      animation-timing-function: linear;
      border: dashed red 4px;
@@ -32,7 +32,7 @@ spin {
      }
      p {
          font-size: 80px
-     }
+     } */
   }
   `
  
@@ -50,7 +50,6 @@ spin {
              <p>{props.species}</p>
              <p>{props.type}</p>
              <p>{props.gender}</p> 
-             <p>{props.origin}</p> 
          </Div>
 
 
