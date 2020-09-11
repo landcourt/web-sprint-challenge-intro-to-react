@@ -1,45 +1,24 @@
 // Write your Character component here
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
-const kf = keyframes`
-spin {
-     from {
-         transform:rotate(0deg);
-     }
-     to {
-         transform:rotate(360deg);
-     }
-`
 
  const Div = styled.div`
-  border: solid black 2px;
+  border: solid ${pr => pr.theme.grey} 2px;
   width: 50%;
-
+  color: ${pr => pr.theme.white};
   margin-bottom: 1%;
-  background-color: white;
+  background-color: ${pr => pr.theme.primaryColor};
+  transition: .5s ease-in-out;
   
   &:hover {
-     /* animation-name: spin;
-     animation-duration: 10000ms;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
-     border: dashed red 4px;
-     height: 400px;
-
-     h1 {
-         font-size: 100px;
-     }
-     p {
-         font-size: 80px
-     } */
+    transition: .5s ease-in-out;
+    border: solid ${pr => pr.theme.grey} 2px;
+    color: ${pr => pr.theme.primaryColor};
+    background-color: ${pr => pr.theme.white};
   }
   `
  
-  
-
-
-
 
  function Character(props) {
      return (
